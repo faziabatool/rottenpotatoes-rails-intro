@@ -48,8 +48,8 @@
     
     # fliter the movies based on the checkbox selected and sort it by the given type
     # order_by will be nil for the first time but it will work just fine
-    # @movies = Movie.where("rating in (?)", @ratings.keys).order(order_by)
-    @movies = Movie.all
+    @movies = Movie.where("rating in (?)", @ratings.keys).order(order_by)
+    #@movies = Movie.all
   end
 
   def new
